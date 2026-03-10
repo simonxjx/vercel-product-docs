@@ -38,6 +38,7 @@ const prompt = isChinese
 - 每个部分的标题加粗并加冒号，然后换一行
 - 第二和第三部分的标题上方空一行
 - 输出 HTML 格式，可直接在网页中渲染
+- **输出前后不包含多余空行或字符**
 
 目的与范围
 
@@ -83,6 +84,7 @@ Requirements:
 - Ignore images, code blocks, and tables
 - Focus only on key information
 - Keep the summary concise and clear
+- **Do not include any extra characters or blank lines at the beginning or end**
 
 Document:
 ${text}
@@ -105,7 +107,14 @@ ${text}
     );
 
     const data = await response.json();
-    let summary = data.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
+    let summary = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+
+    // 清理可能的 Markdown 包裹或多余空行
+    summary = summary
+      .replace(/^```html\s*/i, "")  // 去掉开头 ```html
+      .replace(/^```\s*/i, "")      // 去掉开头 ```
+      .replace(/\s*```$/, "")       // 去掉结尾 ```
+      .trim();                      // 去掉首尾空格和换行
 
     if (!summary) {
       summary = isChinese ? "AI 未能生成摘要。" : "AI could not generate a summary.";
