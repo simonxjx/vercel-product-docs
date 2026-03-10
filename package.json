@@ -1,0 +1,9 @@
+{
+  "name": "summarize-api",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^25.3.5"
+  }
+}
