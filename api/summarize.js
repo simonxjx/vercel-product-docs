@@ -35,19 +35,20 @@ const prompt = isChinese
 请阅读以下技术文档，并生成结构化摘要。
 
 输出必须包含以下三个部分，要求：
-- 标题使用 **加粗格式**
+- 标题使用 font-weight: bold
 - 标题后必须空一行
 - 不使用 Markdown 的 # 或 ### 标题
+- 每个部分直接空一行
 
-**目的与范围**
+目的与范围
 
 - 用1-2句话说明文档的目的以及涵盖范围。
 
-**价值说明**
+价值说明
 
 - 用1-2句话说明这篇文档对读者的价值或能解决什么问题。
 
-**内容快速概览**
+内容快速概览
 
 - 用3-5条简洁的要点总结文档的主要内容，每条一行。
 
@@ -63,19 +64,20 @@ ${text}
 Read the following technical documentation and generate a structured summary.
 
 The output must contain the following three sections, with these rules:
-- Section titles must be in **bold**
+- Section titles must be in font-weight: bold
 - There must be a blank line after each title
 - Do not use Markdown headings (#, ##, ###)
+- Leave a blank line between each section
 
-**Purpose & Scope**
+Purpose & Scope
 
 - 1–2 sentences explaining the purpose of the document and what it covers.
 
-**Value Proposition**
+Value Proposition
 
 - 1–2 sentences explaining the value of the document and why it is useful for readers.
 
-**Quick Summary of Content**
+Quick Summary of Content
 
 - 3–5 concise bullet points summarizing the main content, one sentence per bullet.
 
