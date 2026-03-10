@@ -35,10 +35,9 @@ const prompt = isChinese
 请阅读以下技术文档，并生成结构化摘要。
 
 输出必须包含以下三个部分，要求：
-- 标题使用 font-weight: bold
 - 标题后必须空一行
 - 不使用 Markdown 的 # 或 ### 标题
-- 每个部分直接空一行
+- 第二和第三部分的标题前面多空一行
 
 目的与范围
 
@@ -64,10 +63,9 @@ ${text}
 Read the following technical documentation and generate a structured summary.
 
 The output must contain the following three sections, with these rules:
-- Section titles must be in font-weight: bold
 - There must be a blank line after each title
 - Do not use Markdown headings (#, ##, ###)
-- Leave a blank line between each section
+- Add an extra blank line before the titles of the second and third parts
 
 Purpose & Scope
 
