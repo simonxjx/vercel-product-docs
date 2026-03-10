@@ -37,6 +37,7 @@ const prompt = isChinese
 输出必须包含以下三个部分，要求：
 - 每个部分的标题加粗并加冒号，然后换一行
 - 第二和第三部分的标题上方空一行
+- 输出 HTML 格式，可直接在网页中渲染
 
 目的与范围
 
@@ -64,6 +65,7 @@ Read the following technical documentation and generate a structured summary.
 The output must contain the following three sections, with these rules:
 - Bold the title of each section and add a colon, then move to a new line
 - Leave a blank line above the titles of the second and third sections
+- Output HTML string, can be directly rendered on a webpage
 
 Purpose & Scope
 
