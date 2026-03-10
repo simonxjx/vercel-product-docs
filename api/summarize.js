@@ -39,6 +39,7 @@ const prompt = isChinese
 - 第二和第三部分的标题上方空一行
 - 输出 HTML 格式，可直接在网页中渲染
 - **输出前后不包含多余空行或字符**
+- 忽略图片、代码块和表格
 
 目的与范围
 
@@ -53,7 +54,6 @@ const prompt = isChinese
 - 用3-5条简洁的要点总结文档的主要内容，每条一行。
 
 要求：
-- 忽略图片、代码块和表格
 - 只保留核心信息
 - 表达简洁清晰
 
@@ -67,6 +67,8 @@ The output must contain the following three sections, with these rules:
 - Bold the title of each section and add a colon, then move to a new line
 - Leave a blank line above the titles of the second and third sections
 - Output HTML string, can be directly rendered on a webpage
+- **Do not include any extra characters or blank lines at the beginning or end**
+- Ignore images, code blocks, and tables
 
 Purpose & Scope
 
@@ -81,10 +83,8 @@ Quick Summary of Content
 - 3–5 concise bullet points summarizing the main content, one sentence per bullet.
 
 Requirements:
-- Ignore images, code blocks, and tables
 - Focus only on key information
 - Keep the summary concise and clear
-- **Do not include any extra characters or blank lines at the beginning or end**
 
 Document:
 ${text}
