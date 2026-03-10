@@ -35,9 +35,9 @@ const prompt = isChinese
 请阅读以下技术文档，并生成结构化摘要。
 
 输出必须包含以下三个部分，要求：
-- 标题后必须空一行
-- 不使用 Markdown 的 # 或 ### 标题
-- 第二和第三部分的标题前面多空一行
+- 每个部分的标题加粗并加冒号
+- 第二、第三部分的标题上方空两行，可通过添加两个 <br> 实现
+- 输出 HTML 字符串，可直接在网页中渲染
 
 目的与范围
 
@@ -63,9 +63,9 @@ ${text}
 Read the following technical documentation and generate a structured summary.
 
 The output must contain the following three sections, with these rules:
-- There must be a blank line after each title
-- Do not use Markdown headings (#, ##, ###)
-- Add an extra blank line before the titles of the second and third parts
+- Bold the title of each section and add a colon
+- Above the titles of sections two and three, leave two blank lines, which can be achieved by adding two <br>.
+- Output HTML string, can be directly rendered on a webpage
 
 Purpose & Scope
 
